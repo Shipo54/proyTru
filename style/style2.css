@@ -1,0 +1,46 @@
+.pa1
+{
+    padding: 5px;
+    background-image: url(../img/c1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: "tp1   nose"
+                         "nose1 nose2";
+ }
+ .pa1 .tp1
+ {
+    grid-area: tp1;
+ }
+ .pa1 .nose
+ {
+    grid-area: nose;
+ }
+ .pa1 .nose1
+ {
+   background-color: aliceblue;
+    grid-area: nose1;
+ }
+ .pa1 .nose2
+ {
+    grid-area: nose2;
+ }
+ @media screen and (max-width:768px){
+   .pa1
+   {
+       background-image: url(../img/c1.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+      font-family: 'Courier New', Courier, monospace;
+      grid-template-areas: "tp1   tp1"
+                           "nose  nose"
+                           "nose1 nose1"
+                           "nose2 nose2";
+   }
+  }

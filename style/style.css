@@ -1,0 +1,57 @@
+  
+.padre
+{
+    padding: 5px;
+    background-image: url(../img/c1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: "header header header"
+                         "nave   nave   nave"
+                         "cont1  cont2  cont3"
+                         "foot   foot   foot";
+}
+.padre .header
+{
+    grid-area: header;
+}
+.padre .nav
+{
+    grid-area: nave;
+}
+.padre .cont1
+{
+    grid-area: cont1;
+}
+.padre .cont2
+{
+    grid-area: cont2;
+}
+.padre .cont3
+{
+    grid-area: cont3;
+}
+.padre .foot
+{
+    grid-area: foot;
+}
+@media screen and (max-width:768px){
+    .padre
+    {
+        background-image: url(../img/c1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+       font-family: 'Courier New', Courier, monospace;
+       grid-template-areas: "header header"
+                            "nave   nave"
+                            "cont1  cont2"
+                            "cont3  cont2"
+                            "cont3  foot";
+    }
+   }
